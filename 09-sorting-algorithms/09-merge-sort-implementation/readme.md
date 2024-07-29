@@ -20,8 +20,8 @@ function mergeSort(array: number[]): number[]
 ### Examples
 
 ```js
-mergeSort([5, 4, 3, 2, 1]); // Output: [1, 2, 3, 4, 5]
-mergeSort([64, 34, 25, 12, 22, 11, 90]); // Output: [11, 12, 22, 25, 34, 64, 90]
+console.log(mergeSort([5, 4, 3, 2, 1])); // Output: [1, 2, 3, 4, 5]
+console.log(mergeSort([64, 34, 25, 12, 22, 11, 90])); // Output: [11, 12, 22, 25, 34, 64, 90]
 ```
 
 ### Constraints

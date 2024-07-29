@@ -1,3 +1,5 @@
-const helloWorld = require("./hello-world");
+const helloWorld = require('./hello-world');
 
-helloWorld();
+const result = helloWorld();
+
+console.log(result);

@@ -17,7 +17,7 @@ function maxSubarraySum(arr, k) {
 		currentSum = currentSum - arr[i - k] + arr[i];
 
 		// Log the update for visualization (optional)
-		`${currentSum} - ${arr[i - k]} + ${arr[i]}`;
+		console.log(`${currentSum} - ${arr[i - k]} + ${arr[i]}`);
 
 		// Update maxSum with the maximum value between maxSum and currentSum
 		maxSum = Math.max(maxSum, currentSum);

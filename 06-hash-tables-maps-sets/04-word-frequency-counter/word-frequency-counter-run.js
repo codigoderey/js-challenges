@@ -4,4 +4,4 @@ const result = wordFrequencyCounter(
 	"The quick brown fox jumps over the lazy dog."
 );
 
-result;
+console.log(result);

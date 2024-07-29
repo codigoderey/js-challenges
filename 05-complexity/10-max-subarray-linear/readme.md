@@ -21,11 +21,11 @@ function maxSubarraySum(arr: number[], k: number): number
 ```javascript
 const arr1 = [2, 5, 3, 1, 11, 7, 6, 4];
 const k1 = 3;
-maxSubarraySum(arr1, k1); // Output: 24
+console.log(maxSubarraySum(arr1, k1)); // Output: 24
 
 const arr2 = [-2, -5, -3, -1, -11, -7, -6, -4];
 const k2 = 4;
-maxSubarraySum(arr2, k2); // Output: -9
+console.log(maxSubarraySum(arr2, k2)); // Output: -9
 ```
 
 ### Constraints
@@ -54,7 +54,7 @@ function maxSubarraySum(arr, k) {
 
 	for (let i = k; i < arr.length; i++) {
 		currentSum = currentSum - arr[i - k] + arr[i];
-		`${currentSum} - ${arr[i - k]} + ${arr[i]}`; // Optional
+		console.log(`${currentSum} - ${arr[i - k]} + ${arr[i]}`); // Optional
 		maxSum = Math.max(maxSum, currentSum);
 	}
 
@@ -74,7 +74,7 @@ function maxSubarraySum(arr, k) {
 
 - Within the second loop, currentSum is updated using the sliding window concept. The element that leaves the window (at index i - k) is subtracted, and the new element entering the window (at index i) is added.
 
-- An optional statement logs the update of currentSum for visualization purposes, showing how the window slides and how the current sum changes.
+- An optional console.log statement logs the update of currentSum for visualization purposes, showing how the window slides and how the current sum changes.
 
 - maxSum is updated using the Math.max function to keep track of the maximum sum encountered during the sliding window traversal.
 

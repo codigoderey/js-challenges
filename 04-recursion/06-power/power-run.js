@@ -2,4 +2,4 @@ const power = require("./power");
 
 const result = power(2, 4);
 
-result;
+console.log(result);

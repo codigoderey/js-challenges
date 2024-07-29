@@ -29,7 +29,11 @@ function diceGameSimulation(numSimulations: number): Array;
 ### Example
 
 ```js
+<<<<<<< HEAD
 diceGameSimulation(3);
+=======
+console.log(diceGameSimulation(3));
+>>>>>>> 2fe7c6c07744bc0585c942c275bdce6acecbfad6
 /*
   { dice1: 1, dice2: 5, sum: 6, result: 'roll again' },
   { dice1: 5, dice2: 6, sum: 11, result: 'win' },
@@ -48,6 +52,7 @@ diceGameSimulation(3);
 
 ```js
 function rollDice() {
+<<<<<<< HEAD
 	return Math.floor(Math.random() * 6) + 1;
 }
 
@@ -72,6 +77,32 @@ function diceGameSimulation(numSimulations) {
 	}
 
 	return results;
+=======
+  return Math.floor(Math.random() * 6) + 1;
+}
+
+function diceGameSimulation(numSimulations) {
+  const results = [];
+
+  for (let i = 0; i < numSimulations; i++) {
+    const dice1 = rollDice();
+    const dice2 = rollDice();
+    const sum = dice1 + dice2;
+
+    let result = '';
+    if (sum === 7 || sum === 11) {
+      result = 'win';
+    } else if (sum === 2 || sum === 3 || sum === 12) {
+      result = 'lose';
+    } else {
+      result = 'roll again';
+    }
+
+    results.push({ dice1, dice2, sum, result });
+  }
+
+  return results;
+>>>>>>> 2fe7c6c07744bc0585c942c275bdce6acecbfad6
 }
 
 module.exports = diceGameSimulation;
@@ -90,6 +121,7 @@ module.exports = diceGameSimulation;
 ### Test Cases
 
 ```js
+<<<<<<< HEAD
 test("Dice Game Simulation", () => {
 	const numSimulations = 5;
 	const simulationResults = diceGameSimulation(numSimulations);
@@ -100,5 +132,19 @@ test("Dice Game Simulation", () => {
 			`  Dice 1: ${roll.dice1}, Dice 2: ${roll.dice2}, Sum: ${roll.sum}, Result: ${roll.result}`;
 		});
 	});
+=======
+test('Dice Game Simulation', () => {
+  const numSimulations = 5;
+  const simulationResults = diceGameSimulation(numSimulations);
+
+  simulationResults.forEach((result) => {
+    console.log(`Simulation Result: ${result.finalResult}`);
+    result.rolls.forEach((roll) => {
+      console.log(
+        `  Dice 1: ${roll.dice1}, Dice 2: ${roll.dice2}, Sum: ${roll.sum}, Result: ${roll.result}`
+      );
+    });
+  });
+>>>>>>> 2fe7c6c07744bc0585c942c275bdce6acecbfad6
 });
 ```

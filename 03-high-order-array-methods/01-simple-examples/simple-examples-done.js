@@ -5,7 +5,7 @@ const numbers = [1, 2, 3, 4, 5];
  */
 const doubledNumbers = numbers.map((num) => num * 2);
 
-// (doubledNumbers);
+// console.log(doubledNumbers);
 
 /**
  * filter: Creates a new array with elements that satisfy a specified condition.
@@ -13,7 +13,7 @@ const doubledNumbers = numbers.map((num) => num * 2);
 
 const evenNumbers = numbers.filter((num) => num > 2);
 
-// (evenNumbers);
+// console.log(evenNumbers);
 
 /**
  * reduce: Accumulates array elements into a single value using a provided function.
@@ -21,13 +21,13 @@ const evenNumbers = numbers.filter((num) => num > 2);
 
 const sum = numbers.reduce((total, num) => total + num, 0);
 
-// (sum);
+// console.log(sum);
 
 /**
  * forEach: Iterates through array elements and applies a function without creating a new array.
  */
 
-// numbers.forEach((num) => (num));
+// numbers.forEach((num) => console.log(num));
 
 /**
  * find: Returns the first array element that satisfies a specified condition.
@@ -35,7 +35,7 @@ const sum = numbers.reduce((total, num) => total + num, 0);
 
 const foundNumber = numbers.find((num) => num > 2);
 
-// (foundNumber);
+// console.log(foundNumber);
 
 /**
  * some: Checks if at least one array element satisfies a condition.
@@ -43,7 +43,7 @@ const foundNumber = numbers.find((num) => num > 2);
 
 const hasEvenNumber = numbers.some((num) => num > 5);
 
-// (hasEvenNumber);
+// console.log(hasEvenNumber);
 
 /**
  * every: Checks if all array elements satisfy a condition.
@@ -51,4 +51,4 @@ const hasEvenNumber = numbers.some((num) => num > 5);
 
 const allNumsGreaterThanZero = numbers.every((num) => num > 0);
 
-allNumsGreaterThanZero;
+console.log(allNumsGreaterThanZero);

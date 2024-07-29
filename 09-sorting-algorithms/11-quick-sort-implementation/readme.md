@@ -20,8 +20,8 @@ function quickSort(array: number[]): number[]
 ### Examples
 
 ```js
-quickSort([5, 4, 3, 2, 1]); // Output: [1, 2, 3, 4, 5]
-quickSort([64, 34, 25, 12, 22, 11, 90]); // Output: [11, 12, 22, 25, 34, 64, 90]
+console.log(quickSort([5, 4, 3, 2, 1])); // Output: [1, 2, 3, 4, 5]
+console.log(quickSort([64, 34, 25, 12, 22, 11, 90])); // Output: [11, 12, 22, 25, 34, 64, 90]
 ```
 
 ### Constraints
